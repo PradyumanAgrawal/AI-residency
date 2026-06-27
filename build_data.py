@@ -50,6 +50,7 @@ ROOMS = {
     "Cloutly": "V-Lab Back",
     "MERU": "GS-3",
     "BRAHMA Aerospace": "GS-2",
+    "AI Infra": "V-Lab Front",
 }
 
 rows = []
