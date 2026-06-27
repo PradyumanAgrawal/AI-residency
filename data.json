@@ -238,7 +238,7 @@
       "solution": "We are building a NISAR-native interferogram processing layer that combines coherence prediction, intelligent pair selection, and coherence-guided S/L band fusion. By predicting interferometric quality before processing and leveraging the complementary strengths of NISAR's simultaneous S-band and L-band observations, we aim to reduce unnecessary computation while generating benchmark-quality interferograms in regions where conventional single-band InSAR often fails."
     },
     {
-      "room": "",
+      "room": "GS-2",
       "startup": "BRAHMA Aerospace",
       "members": "Sandipan & Miheer",
       "sector": "Aerospace",
@@ -268,7 +268,7 @@
       "solution": "Satellite InSAR-based ground deformation monitoring layer, producing section-wise risk priority for existing inspection teams - not a replacement."
     },
     {
-      "room": "",
+      "room": "GS-3",
       "startup": "MERU",
       "members": "Adil & Aniket",
       "sector": "Geospatial Tech",

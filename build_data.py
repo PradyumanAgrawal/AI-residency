@@ -48,6 +48,8 @@ ROOMS = {
     "VoClyp": "MD-5",
     "Guild": "MD-6",
     "Cloutly": "V-Lab Back",
+    "MERU": "GS-3",
+    "BRAHMA Aerospace": "GS-2",
 }
 
 rows = []
