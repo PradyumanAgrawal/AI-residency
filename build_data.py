@@ -56,6 +56,11 @@ ROOMS = {
     "undark": "V-Lab Center",
 }
 
+# Optional website / X links, keyed by startup name. Backfill as they come in.
+LINKS = {
+    "Guild": {"website": "https://www.guilds.work/", "x": "https://x.com/AdvGuildHQ"},
+}
+
 rows = []
 for r in range(2, ws.max_row + 1):
     members = cell(r, 1)
@@ -110,6 +115,12 @@ rows.extend(EXTRAS)
 for t in rows:
     if t["startup"] in ROOMS:
         t["room"] = ROOMS[t["startup"]]
+
+# Apply link overrides
+for t in rows:
+    if t["startup"] in LINKS:
+        t["website"] = LINKS[t["startup"]].get("website", t["website"])
+        t["x"] = LINKS[t["startup"]].get("x", t["x"])
 
 # Stable order: by group_order, preserving sheet order within a group
 rows.sort(key=lambda x: group_order.index(x["sector"]))
