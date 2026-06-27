@@ -54,6 +54,7 @@ ROOMS = {
     "TRECC": "V-Lab Front",
     "Gridlytics": "V-Lab Center",
     "undark": "V-Lab Center",
+    "PHASE IQ": "V-Lab Back",
 }
 
 # Optional website / X links, keyed by startup name. Backfill as they come in.
