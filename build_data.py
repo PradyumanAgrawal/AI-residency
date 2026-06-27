@@ -52,6 +52,7 @@ ROOMS = {
     "BRAHMA Aerospace": "GS-2",
     "AI Infra": "V-Lab Front",
     "TRECC": "V-Lab Front",
+    "Gridlytics": "V-Lab Center",
 }
 
 rows = []
