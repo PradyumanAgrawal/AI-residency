@@ -34,9 +34,9 @@ meta = {
 # Display order of sector groups.
 # Business-relevant sectors first (for the MBA audience), deep-tech / space last.
 group_order = [
-    "Enterprise AI", "Consumer Tech", "Regulatory Tech", "Fintech", "Healthtech",
-    "Space Tech", "Aerospace", "Geospatial Tech", "Physical AI & Robotics",
-    "Advanced Manufacturing",
+    "Enterprise AI", "Consumer Tech", "Regulatory Tech", "Fintech", "Blockchain",
+    "Healthtech", "Space Tech", "Aerospace", "Geospatial Tech",
+    "Physical AI & Robotics", "Advanced Manufacturing",
 ]
 
 rows = []
@@ -51,9 +51,43 @@ for r in range(2, ws.max_row + 1):
         "members": members,
         "sector": meta[r][0],
         "keywords": meta[r][1],
+        "website": "",
+        "x": "",
         "problem": cell(r, 3),
         "solution": cell(r, 5),
     })
+
+# Teams not in the Excel sheet, added manually.
+EXTRAS = [
+    {
+        "room": "",
+        "startup": "TRECC",
+        "members": "Aakash",
+        "sector": "Blockchain",
+        "keywords": ["DeFi", "Lending", "Agentic payments"],
+        "website": "https://trecc.finance",
+        "x": "https://x.com/treccfinance",
+        "problem": (
+            'The "Drunk Chauffeur" Dilemma in AI Finance\n\n'
+            "We are rapidly moving into a world where companies and individuals want AI bots to manage money, things like automatically trading crypto, rebalancing investment portfolios, and finding the best yield across decentralized finance markets entirely on autopilot.\n\n"
+            "However, there is a massive, high-stakes problem keeping institutional capital on the sidelines:\n\n"
+            "AI is Unpredictable: At their core, today's AIs are built on probabilities, not strict logic. They guess the next best action. This means an AI can occasionally \"hallucinate\" or get confused. If a customer service AI hallucinates, it types a funny sentence. If a financial AI hallucinates, it can accidentally send $1,000,000 to the wrong wallet address or buy a worthless asset.\n\n"
+            "The \"All-or-Nothing\" Vault Access: To let an AI buy and sell assets, you have to give it the \"keys\" to your digital bank vault. But once the AI has those keys, there is no way to stop it if it goes rogue or makes a mistake. It has the power to drain the entire vault in seconds.\n\n"
+            "The Speed vs. Safety Tradeoff: Right now, the only way to prevent this is to have a human review every single transaction the AI wants to make. But having a human constantly click \"Approve\" completely destroys the speed and cost-efficiency of using automated software in the first place."
+        ),
+        "solution": (
+            "The Automated Financial Guardrail\n\n"
+            "TRECC acts like a digital, bank-grade security guard that stands between the AI bot and your money.\n\n"
+            "Instead of letting the AI talk directly to your digital vault, TRECC sits in the middle. Here is how it protects capital:\n\n"
+            "Instant Safety Checks: Every time the AI bot says, \"I want to execute a trade,\" TRECC intercepts that command instantly before any money moves.\n\n"
+            "Hard Business Rules: TRECC passes the AI's request through a set of rigid, unbending financial rules set by the business owner (e.g., \"Never risk more than 2% of the portfolio on a single trade,\" or \"Only send money to approved addresses\").\n\n"
+            "The Safe Vault: Because the AI never actually gets direct access to the master keys of the vault, it is physically impossible for a confused or rogue AI to drain the funds. It can only execute trades that perfectly match the pre-approved safety limits.\n\n"
+            "Sub-Second Execution: This entire safety inspection happens in less than half a second.\n\n"
+            "The Bottom Line: TRECC gives businesses and investors the best of both worlds, the lightning-fast execution speed of autonomous AI, with the absolute financial safety and risk management of a traditional bank."
+        ),
+    },
+]
+rows.extend(EXTRAS)
 
 # Stable order: by group_order, preserving sheet order within a group
 rows.sort(key=lambda x: group_order.index(x["sector"]))

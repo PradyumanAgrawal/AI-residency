@@ -136,6 +136,14 @@ h1{
 .m-titles .m-sector{font-family:'Oswald',sans-serif; font-weight:600; font-size:11.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--green-2)}
 .m-titles .m-name{font-family:'Oswald',sans-serif; font-weight:700; font-size:24px; color:var(--green); line-height:1.05; margin:2px 0}
 .m-titles .m-ppl{font-size:14px; color:var(--muted)}
+.m-links{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
+.m-link{
+  display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:600;
+  color:var(--green); background:var(--sage); border-radius:999px; padding:6px 12px;
+  text-decoration:none;
+}
+.m-link:hover{background:#d9e2ca}
+.m-link svg{width:14px; height:14px}
 .x{
   border:none; background:var(--sage); color:var(--green); width:38px; height:38px; flex:none;
   border-radius:50%; font-size:20px; cursor:pointer; line-height:1; display:flex; align-items:center; justify-content:center;
@@ -211,6 +219,7 @@ h1{
         <div class="m-sector" id="m-sector"></div>
         <div class="m-name" id="m-name"></div>
         <div class="m-ppl" id="m-ppl"></div>
+        <div class="m-links" id="m-links"></div>
       </div>
       <button class="x" id="x" aria-label="Close">&times;</button>
     </div>
@@ -284,8 +293,10 @@ h1{
     room: document.getElementById('m-room'), sector: document.getElementById('m-sector'),
     name: document.getElementById('m-name'), ppl: document.getElementById('m-ppl'),
     prob: document.getElementById('m-prob'), sol: document.getElementById('m-sol'),
-    solH: document.getElementById('m-sol-h')
+    solH: document.getElementById('m-sol-h'), links: document.getElementById('m-links')
   };
+  var globeSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></svg>';
+  var xSvg = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.2 8.2L23 22h-6.6l-5.2-6.8L5.3 22H2.2l7.7-8.8L1.5 2h6.8l4.7 6.2L18.9 2Zm-1.2 18h1.8L7.4 3.9H5.5L17.7 20Z"/></svg>';
   function render(i){
     var t = teams[i]; if(!t) return;
     cur = i;
@@ -294,6 +305,11 @@ h1{
     el.sector.textContent = t.sector;
     el.name.textContent = t.startup || t.members;
     el.ppl.textContent = t.members;
+    var lk = '';
+    if(t.website) lk += '<a class="m-link" href="'+esc(t.website)+'" target="_blank" rel="noopener">'+globeSvg+'Website</a>';
+    if(t.x) lk += '<a class="m-link" href="'+esc(t.x)+'" target="_blank" rel="noopener">'+xSvg+'X</a>';
+    el.links.innerHTML = lk;
+    el.links.style.display = lk ? 'flex' : 'none';
     el.prob.textContent = t.problem || 'Coming soon.';
     el.prob.className = t.problem ? 'm-text' : 'm-text none';
     if(t.solution){ el.sol.textContent = t.solution; el.sol.className='m-text'; el.solH.style.display=''; el.sol.style.display=''; }
