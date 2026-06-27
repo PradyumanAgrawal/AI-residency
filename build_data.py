@@ -39,6 +39,15 @@ group_order = [
     "Physical AI & Robotics", "Advanced Manufacturing",
 ]
 
+# Room assignments, keyed by startup name. Backfill as the mapping comes in.
+ROOMS = {
+    "Complyt": "MD-1",
+    "Sentrix Robotics": "MD-2",
+    "GeneGenie": "MD-3",
+    "Drivos": "MD-4",
+    "Guild": "MD-6",
+}
+
 rows = []
 for r in range(2, ws.max_row + 1):
     members = cell(r, 1)
@@ -88,6 +97,11 @@ EXTRAS = [
     },
 ]
 rows.extend(EXTRAS)
+
+# Apply room assignments
+for t in rows:
+    if t["startup"] in ROOMS:
+        t["room"] = ROOMS[t["startup"]]
 
 # Stable order: by group_order, preserving sheet order within a group
 rows.sort(key=lambda x: group_order.index(x["sector"]))

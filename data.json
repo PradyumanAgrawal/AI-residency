@@ -30,7 +30,7 @@
       "solution": "VoClyp is a privacy-first conversation intelligence platform built specifically for distributed field sales forces. It seamlessly turns real-time, permission-based spoken words into structured, actionable market intelligence within minutes. Designed directly for complex, multilingual, and low-connectivity environments, the platform acts as an invisible intelligence layer between the physical sales floor and corporate headquarters.\n\nThe platform delivers value across three key areas:\n\n• Frictionless Field Capture: Sales agents use a lightweight mobile app or wearable clip device to record conversations with explicit customer consent. It operates completely offline in low-connectivity zones and syncs automatically in the background when network access returns, requiring zero technical overhead from the agent.\n\n• Enterprise-Grade Localized Processing: The processing pipeline uses specialized speech recognition to transcribe mixed-language dialects, such as Hinglish, across over 120 Indian languages. To remain strictly compliant with regional compliance mandates like India's DPDP Act, raw audio is processed instantly and permanently deleted within hours.\n\n• Tripartite Value Delivery: Instead of acting as a corporate surveillance tool, a single captured conversation automatically generates three distinct deliverables. The customer receives a tailored product shortlist and pricing breakdown via WhatsApp. The agent gets an instant playbook outlining next-best steps and objection-handling tips. Corporate leadership receives aggregated market intelligence dashboards to track real-time macro trends, competitor moves, and regional pricing shifts."
     },
     {
-      "room": "",
+      "room": "MD-4",
       "startup": "Drivos",
       "members": "Kranthi Kumar & Shreya",
       "sector": "Enterprise AI",
@@ -45,7 +45,7 @@
       "solution": "An affordable, AI‑powered hardware + software system that translates real‑time fatigue and distraction detection into clear, actionable insights for fleet owners, while building a portable verified safety identity for drivers. Designed for Tier‑2/3 Indian fleets without surveillance or heavy ops overhead."
     },
     {
-      "room": "",
+      "room": "MD-6",
       "startup": "Guild",
       "members": "Abid & Sujal",
       "sector": "Enterprise AI",
@@ -148,7 +148,7 @@
       "solution": ""
     },
     {
-      "room": "",
+      "room": "MD-1",
       "startup": "Complyt",
       "members": "Aditi, Ishita & Mahi",
       "sector": "Regulatory Tech",
@@ -208,7 +208,7 @@
       "solution": "The Automated Financial Guardrail\n\nTRECC acts like a digital, bank-grade security guard that stands between the AI bot and your money.\n\nInstead of letting the AI talk directly to your digital vault, TRECC sits in the middle. Here is how it protects capital:\n\nInstant Safety Checks: Every time the AI bot says, \"I want to execute a trade,\" TRECC intercepts that command instantly before any money moves.\n\nHard Business Rules: TRECC passes the AI's request through a set of rigid, unbending financial rules set by the business owner (e.g., \"Never risk more than 2% of the portfolio on a single trade,\" or \"Only send money to approved addresses\").\n\nThe Safe Vault: Because the AI never actually gets direct access to the master keys of the vault, it is physically impossible for a confused or rogue AI to drain the funds. It can only execute trades that perfectly match the pre-approved safety limits.\n\nSub-Second Execution: This entire safety inspection happens in less than half a second.\n\nThe Bottom Line: TRECC gives businesses and investors the best of both worlds, the lightning-fast execution speed of autonomous AI, with the absolute financial safety and risk management of a traditional bank."
     },
     {
-      "room": "",
+      "room": "MD-3",
       "startup": "GeneGenie",
       "members": "Dhruv Mali & Jayadharini R",
       "sector": "Healthtech",
@@ -283,7 +283,7 @@
       "solution": "We're building a developer-first geospatial infrastructure platform — a unified API and processing layer that abstracts away the complexity of EO data. Developers can query, fuse, and process satellite data (Sentinel, Landsat, NISAR) without managing fragmented providers, getting analysis-ready datasets and processing-as-a-service that cut time-to-build for geospatial applications from months to hours. This unified API is the wedge — the \"Stripe for Earth Observation\" — but it's also the data-collection engine for the bigger play: as developers route their usage intelligence and pipelines through us, we accumulate what's needed to train a multi-modal Geospatial Foundation Model, eventually letting users go from querying raw data to asking decision-level questions directly (\"where should we site a solar farm in Gujarat\") — the GPT for geospatial decision-making."
     },
     {
-      "room": "",
+      "room": "MD-2",
       "startup": "Sentrix Robotics",
       "members": "Jyotishman Das & Saideep Keshri",
       "sector": "Physical AI & Robotics",
