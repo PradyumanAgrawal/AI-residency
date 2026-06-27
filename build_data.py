@@ -45,7 +45,9 @@ ROOMS = {
     "Sentrix Robotics": "MD-2",
     "GeneGenie": "MD-3",
     "Drivos": "MD-4",
+    "VoClyp": "MD-5",
     "Guild": "MD-6",
+    "Cloutly": "V-Lab Back",
 }
 
 rows = []

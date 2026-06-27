@@ -14,7 +14,7 @@
   ],
   "teams": [
     {
-      "room": "",
+      "room": "MD-5",
       "startup": "VoClyp",
       "members": "Kartik Chavan & Akul Ranjan",
       "sector": "Enterprise AI",
@@ -89,7 +89,7 @@
       "solution": ""
     },
     {
-      "room": "",
+      "room": "V-Lab Back",
       "startup": "Cloutly",
       "members": "Ishaan, Aakriti & Kavin",
       "sector": "Consumer Tech",
