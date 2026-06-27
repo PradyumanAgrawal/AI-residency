@@ -34,9 +34,9 @@ meta = {
 # Display order of sector groups.
 # Business-relevant sectors first (for the MBA audience), deep-tech / space last.
 group_order = [
-    "Enterprise AI", "Consumer Tech", "Regulatory Tech", "Fintech", "Blockchain",
-    "Healthtech", "Space Tech", "Aerospace", "Geospatial Tech",
-    "Physical AI & Robotics", "Advanced Manufacturing",
+    "Enterprise AI", "Developer Tools", "Consumer Tech", "Regulatory Tech",
+    "Fintech", "Blockchain", "Healthtech", "Space Tech", "Aerospace",
+    "Geospatial Tech", "Physical AI & Robotics", "Advanced Manufacturing",
 ]
 
 # Room assignments, keyed by startup name. Backfill as the mapping comes in.
@@ -108,6 +108,27 @@ EXTRAS = [
             "The Safe Vault: Because the AI never actually gets direct access to the master keys of the vault, it is physically impossible for a confused or rogue AI to drain the funds. It can only execute trades that perfectly match the pre-approved safety limits.\n\n"
             "Sub-Second Execution: This entire safety inspection happens in less than half a second.\n\n"
             "The Bottom Line: TRECC gives businesses and investors the best of both worlds, the lightning-fast execution speed of autonomous AI, with the absolute financial safety and risk management of a traditional bank."
+        ),
+    },
+    {
+        "room": "",
+        "startup": "Hyperion",
+        "members": "Pranshu Dasgupta",
+        "sector": "Developer Tools",
+        "keywords": ["Observability", "Root cause analysis", "DevOps"],
+        "website": "",
+        "x": "",
+        "problem": (
+            "Every production incident plays out the same way. Alerts fire. Engineers scramble. For the next 45 minutes to 2 hours, your strongest people manually correlate logs, metrics, and deployment history across a half-dozen fragmented tools, while revenue bleeds.\n\n"
+            "Traditional observability tells you what broke. It doesn't tell you why, or how to fix it."
+        ),
+        "solution": (
+            "Hyperion is a deterministic root cause engine for post-production incidents. It correlates logs, metrics, and change history into an evidence-backed verdict, so engineers act in minutes, not hours.\n\n"
+            "It automates the what, the why, and the fix of every post-production incident, shipping a Confidence Score with a ready-to-share Evidence Pack so engineers can rollback, escalate, or stand down with conviction.\n\n"
+            "What makes it different:\n\n"
+            "Deterministic, not probabilistic: Every confidence score is inspectable and reproducible. Hyperion ships evidence, not AI guesses you can't defend in a postmortem.\n\n"
+            "Change-intelligence first: The only RCA tool that treats deployments and config changes as primary causal signals, not afterthoughts buried in a timeline.\n\n"
+            "Secure by design: Telemetry stays in your environment via on-premise or VPC deployment, bypassing lengthy SaaS security reviews entirely."
         ),
     },
 ]

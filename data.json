@@ -1,6 +1,7 @@
 {
   "groupOrder": [
     "Enterprise AI",
+    "Developer Tools",
     "Consumer Tech",
     "Regulatory Tech",
     "Fintech",
@@ -73,6 +74,21 @@
       "x": "",
       "problem": "→ India wastes ₹60 Crore annually: 51.5% solar curtailed (vs 3% global) due to weak forecasting + invisible demand.\n→ DISCOMs lose ₹1.32 Lakh Cr/year: 5M smart meters generate data but zero real-time analytics for theft/loss detection.\n→ IPP refinancing at risk: assets curtailed 50%+ of the time; lenders see 55% utilization vs 85% promised.",
       "solution": "→ Anomaly detection on meter data catches theft in hours (not weeks) = ₹70-130 Cr/year DISCOM loss recovery.\n→ Grid forecast API + demand response visibility de-risks IPP refinancing + increases asset utilization 55% → 75%.\n\n→ Real-time ML forecasting cuts curtailment from 51.5% → 20-30% = ₹120-240 Cr/year value recovery."
+    },
+    {
+      "room": "",
+      "startup": "Hyperion",
+      "members": "Pranshu Dasgupta",
+      "sector": "Developer Tools",
+      "keywords": [
+        "Observability",
+        "Root cause analysis",
+        "DevOps"
+      ],
+      "website": "",
+      "x": "",
+      "problem": "Every production incident plays out the same way. Alerts fire. Engineers scramble. For the next 45 minutes to 2 hours, your strongest people manually correlate logs, metrics, and deployment history across a half-dozen fragmented tools, while revenue bleeds.\n\nTraditional observability tells you what broke. It doesn't tell you why, or how to fix it.",
+      "solution": "Hyperion is a deterministic root cause engine for post-production incidents. It correlates logs, metrics, and change history into an evidence-backed verdict, so engineers act in minutes, not hours.\n\nIt automates the what, the why, and the fix of every post-production incident, shipping a Confidence Score with a ready-to-share Evidence Pack so engineers can rollback, escalate, or stand down with conviction.\n\nWhat makes it different:\n\nDeterministic, not probabilistic: Every confidence score is inspectable and reproducible. Hyperion ships evidence, not AI guesses you can't defend in a postmortem.\n\nChange-intelligence first: The only RCA tool that treats deployments and config changes as primary causal signals, not afterthoughts buried in a timeline.\n\nSecure by design: Telemetry stays in your environment via on-premise or VPC deployment, bypassing lengthy SaaS security reviews entirely."
     },
     {
       "room": "V-Lab Front",
