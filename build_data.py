@@ -56,6 +56,7 @@ ROOMS = {
     "undark": "V-Lab Center",
     "PHASE IQ": "V-Lab Back",
     "BolnaSeekho": "V-Lab Front",
+    "Vikram & Kavya": "V-Lab Front",
 }
 
 # Optional website / X links, keyed by startup name. Backfill as they come in.
@@ -134,10 +135,11 @@ EXTRAS = [
 ]
 rows.extend(EXTRAS)
 
-# Apply room assignments
+# Apply room assignments (match by startup name, or member line if no startup name)
 for t in rows:
-    if t["startup"] in ROOMS:
-        t["room"] = ROOMS[t["startup"]]
+    key = t["startup"] if t["startup"] in ROOMS else t["members"]
+    if key in ROOMS:
+        t["room"] = ROOMS[key]
 
 # Apply link overrides
 for t in rows:
