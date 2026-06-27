@@ -1,0 +1,262 @@
+{
+  "groupOrder": [
+    "Space Tech",
+    "Aerospace",
+    "Geospatial Tech",
+    "Physical AI & Robotics",
+    "Fintech",
+    "Healthtech",
+    "Enterprise AI",
+    "Consumer Tech",
+    "Advanced Manufacturing",
+    "Regulatory Tech"
+  ],
+  "teams": [
+    {
+      "room": "",
+      "startup": "PHASE IQ",
+      "members": "Chhavie & Tanishk",
+      "sector": "Space Tech",
+      "keywords": [
+        "SAR/InSAR radar",
+        "Satellite compute",
+        "Deformation maps"
+      ],
+      "problem": "As NISAR and next-generation SAR missions dramatically increase the volume of radar imagery, existing InSAR workflows struggle to scale efficiently. Large numbers of interferograms must be generated and processed, leading to high computational costs, long processing times, and poor performance in low-coherence regions such as vegetation-rich and monsoon-affected terrain. Organizations need a way to generate reliable deformation products without proportionally increasing compute resources.",
+      "solution": "We are building a NISAR-native interferogram processing layer that combines coherence prediction, intelligent pair selection, and coherence-guided S/L band fusion. By predicting interferometric quality before processing and leveraging the complementary strengths of NISAR's simultaneous S-band and L-band observations, we aim to reduce unnecessary computation while generating benchmark-quality interferograms in regions where conventional single-band InSAR often fails."
+    },
+    {
+      "room": "",
+      "startup": "BRAHMA Aerospace",
+      "members": "Sandipan & Miheer",
+      "sector": "Aerospace",
+      "keywords": [
+        "Industrial sensor data",
+        "Physics-aware AI",
+        "Failure modes"
+      ],
+      "problem": "Industrial and engineering organizations generate massive amounts of sensor and operational data, but discovering hidden failure mechanisms, inefficiencies, and actionable insights from that data remains slow, expensive, and heavily dependent on human experts.",
+      "solution": "BRAHMA uses physics-aware AI and world-modeling to automatically discover hidden mechanisms, future insights and system behavior, and recommend optimal actions from complex industrial data."
+    },
+    {
+      "room": "",
+      "startup": "HalfRay",
+      "members": "Dhruv & Nishant",
+      "sector": "Geospatial Tech",
+      "keywords": [
+        "Railway safety",
+        "Satellite InSAR",
+        "Ground deformation"
+      ],
+      "problem": "Indian Railways' inspection system (monthly officer rounds, SSE checks, trolley patrols, ultrasonic testing) detects defects in the rail/track. It does not detect ground movement beneath the track. Subsurface deformation can progress undetected between inspection cycles.",
+      "solution": "Satellite InSAR-based ground deformation monitoring layer, producing section-wise risk priority for existing inspection teams - not a replacement."
+    },
+    {
+      "room": "",
+      "startup": "MERU",
+      "members": "Adil & Aniket",
+      "sector": "Geospatial Tech",
+      "keywords": [
+        "Earth observation",
+        "Developer API",
+        "Geospatial infra"
+      ],
+      "problem": "Developers and startups building applications in agriculture, climate, and infrastructure need satellite-derived Earth Observation (EO) data, but accessing it today means navigating a fragmented nightmare: disparate data providers, complex procurement APIs, incompatible file formats (NetCDF, GeoTIFF), and the crushing cloud compute costs of processing raw satellite imagery. Instead of spending their first six months building their actual product, these teams burn runway reinventing geospatial infrastructure from scratch. Existing tools like Google Earth Engine are built for academic research, not production-grade software engineering — leaving a gap for teams who need to ship, not experiment.",
+      "solution": "We're building a developer-first geospatial infrastructure platform — a unified API and processing layer that abstracts away the complexity of EO data. Developers can query, fuse, and process satellite data (Sentinel, Landsat, NISAR) without managing fragmented providers, getting analysis-ready datasets and processing-as-a-service that cut time-to-build for geospatial applications from months to hours. This unified API is the wedge — the \"Stripe for Earth Observation\" — but it's also the data-collection engine for the bigger play: as developers route their usage intelligence and pipelines through us, we accumulate what's needed to train a multi-modal Geospatial Foundation Model, eventually letting users go from querying raw data to asking decision-level questions directly (\"where should we site a solar farm in Gujarat\") — the GPT for geospatial decision-making."
+    },
+    {
+      "room": "",
+      "startup": "Sentrix Robotics",
+      "members": "Jyotishman Das & Saideep Keshri",
+      "sector": "Physical AI & Robotics",
+      "keywords": [
+        "Robotics data",
+        "Multimodal sensing",
+        "Embodied AI"
+      ],
+      "problem": "Physical AI systems require massive volumes of high-quality, synchronized real-world interaction data to learn dexterous manipulation and human-like behavior. However, existing data collection solutions are fragmented, expensive, hardware-specific, and difficult to scale across sensing modalities. This creates a critical data bottleneck that slows the development of robotics, humanoids, teleoperation systems, and embodied AI models.",
+      "solution": "Sentrix is building a modular data collection ecosystem for Physical AI. We provide a catalog of synchronizable sensing hardware and software infrastructure that enables researchers and companies to capture, synchronize, validate, and export multimodal human interaction datasets. Our initial focus is tactile and vision data fusion, with future expansion into additional sensing modalities such as force, motion, bio-signals, and environmental context. Alongside the platform, Sentrix generates bespoke datasets tailored to customer-specific training and research requirements."
+    },
+    {
+      "room": "",
+      "startup": "undark",
+      "members": "Rahul Shendre & Vaibhav Shukla",
+      "sector": "Fintech",
+      "keywords": [
+        "Loan collections",
+        "Debt recovery",
+        "NBFCs"
+      ],
+      "problem": "Small-ticket loan collections (below ₹1 lakh) remain expensive and fragmented, making recoveries inefficient for NBFCs and digital lenders.",
+      "solution": "Building an intelligence layer on top of the current infra that helps lenders prioritize accounts, recommend the next best collection action, and improve recoveries using existing collection workflows instead of replacing them."
+    },
+    {
+      "room": "",
+      "startup": "VigilNet.tech",
+      "members": "Raghav Maheshwari",
+      "sector": "Fintech",
+      "keywords": [
+        "AML / RegTech",
+        "Alert triage",
+        "False positives"
+      ],
+      "problem": "90-95% AML alerts are false positives. Analysts spend 15mins-2+ hrs triaging the flagged transactions with zero intelligence.",
+      "solution": ""
+    },
+    {
+      "room": "",
+      "startup": "GeneGenie",
+      "members": "Dhruv Mali & Jayadharini R",
+      "sector": "Healthtech",
+      "keywords": [
+        "Genomics",
+        "Risk prediction",
+        "India-specific"
+      ],
+      "problem": "Missing population specific genomic interpretation variant databases and risk prediction models",
+      "solution": "A risk prediction and interpretation platform designed specifically for Indian populations."
+    },
+    {
+      "room": "",
+      "startup": "VoClyp",
+      "members": "Kartik Chavan & Akul Ranjan",
+      "sector": "Enterprise AI",
+      "keywords": [
+        "Field sales",
+        "Voice intelligence",
+        "Multilingual",
+        "Privacy-first"
+      ],
+      "problem": "Enterprises with distributed field-sales teams in India suffer from a structural data blind spot: the richest voice-of-customer data exists in live field conversations, but it evaporates the moment the visit ends.\n\n1. The CRM Illusion: Current CRMs only log outcomes (“deal lost”, “follow-up”). They fail to capture the why?  the real-time customer objections, competitor comparisons, and pricing sensitivities that dictate market movement.\n\n2. Environmental Friction: Traditional data entry fails because Indian retail and field sales are chaotic. Agents operate in high-footfall environments with heavy background noise, often requiring their hands for physical product demos. They lack the time, technical literacy, and incentive to write detailed CRM notes.\n\n3. The Trust and Compliance Barrier: In high-regulation sectors like Insurance and Finance, stringent data privacy laws (like India's DPDP Act) make traditional, persistent audio surveillance a legal liability and a massive friction point for consumer trust.",
+      "solution": "VoClyp is a privacy-first conversation intelligence platform built specifically for distributed field sales forces. It seamlessly turns real-time, permission-based spoken words into structured, actionable market intelligence within minutes. Designed directly for complex, multilingual, and low-connectivity environments, the platform acts as an invisible intelligence layer between the physical sales floor and corporate headquarters.\n\nThe platform delivers value across three key areas:\n\n• Frictionless Field Capture: Sales agents use a lightweight mobile app or wearable clip device to record conversations with explicit customer consent. It operates completely offline in low-connectivity zones and syncs automatically in the background when network access returns, requiring zero technical overhead from the agent.\n\n• Enterprise-Grade Localized Processing: The processing pipeline uses specialized speech recognition to transcribe mixed-language dialects, such as Hinglish, across over 120 Indian languages. To remain strictly compliant with regional compliance mandates like India's DPDP Act, raw audio is processed instantly and permanently deleted within hours.\n\n• Tripartite Value Delivery: Instead of acting as a corporate surveillance tool, a single captured conversation automatically generates three distinct deliverables. The customer receives a tailored product shortlist and pricing breakdown via WhatsApp. The agent gets an instant playbook outlining next-best steps and objection-handling tips. Corporate leadership receives aggregated market intelligence dashboards to track real-time macro trends, competitor moves, and regional pricing shifts."
+    },
+    {
+      "room": "",
+      "startup": "Drivos",
+      "members": "Kranthi Kumar & Shreya",
+      "sector": "Enterprise AI",
+      "keywords": [
+        "Fleet safety",
+        "Driver fatigue",
+        "Edge AI"
+      ],
+      "problem": "India’s small and mid‑sized fleet operators face crippling risks from driver fatigue and unverified driver identity, with no affordable or effective accountability systems available.",
+      "solution": "An affordable, AI‑powered hardware + software system that translates real‑time fatigue and distraction detection into clear, actionable insights for fleet owners, while building a portable verified safety identity for drivers. Designed for Tier‑2/3 Indian fleets without surveillance or heavy ops overhead."
+    },
+    {
+      "room": "",
+      "startup": "Guild",
+      "members": "Abid & Sujal",
+      "sector": "Enterprise AI",
+      "keywords": [
+        "AI services",
+        "D2C & SME",
+        "Student teams"
+      ],
+      "problem": "Guild is an AI-augmented talent factory that delivers 4-week AI automation sprints to Indian D2C brands and regional SMEs at 1/5 agency cost, using rank-verified, Guild Master-supervised student teams.",
+      "solution": "Digital & AI services Agnecy platform connecting underserved potential students and MSMBs which have low margins to invest in themselves for more revenue and critical problems"
+    },
+    {
+      "room": "",
+      "startup": "Gridlytics",
+      "members": "Akshat Jain, Divyanshu Kashyap & Aakash Jaiswal",
+      "sector": "Enterprise AI",
+      "keywords": [
+        "Power grid",
+        "Theft & loss",
+        "Solar curtailment"
+      ],
+      "problem": "→ India wastes ₹60 Crore annually: 51.5% solar curtailed (vs 3% global) due to weak forecasting + invisible demand.\n→ DISCOMs lose ₹1.32 Lakh Cr/year: 5M smart meters generate data but zero real-time analytics for theft/loss detection.\n→ IPP refinancing at risk: assets curtailed 50%+ of the time; lenders see 55% utilization vs 85% promised.",
+      "solution": "→ Anomaly detection on meter data catches theft in hours (not weeks) = ₹70-130 Cr/year DISCOM loss recovery.\n→ Grid forecast API + demand response visibility de-risks IPP refinancing + increases asset utilization 55% → 75%.\n\n→ Real-time ML forecasting cuts curtailment from 51.5% → 20-30% = ₹120-240 Cr/year value recovery."
+    },
+    {
+      "room": "",
+      "startup": "AI Infra",
+      "members": "Vidit Parikh & Mokshada Nehete",
+      "sector": "Consumer Tech",
+      "keywords": [
+        "Content engineering",
+        "Low token cost"
+      ],
+      "problem": "Content Engineering for low cost token consumption",
+      "solution": ""
+    },
+    {
+      "room": "",
+      "startup": "Cloutly",
+      "members": "Ishaan, Aakriti & Kavin",
+      "sector": "Consumer Tech",
+      "keywords": [
+        "Creator economy",
+        "Content workflow",
+        "Brand matching"
+      ],
+      "problem": "Content creators struggle to plan, ideate, and create content across fragmented AI tools while managing brand collaborations, and brands struggle to find reliable creators who match their niche and can consistently deliver the right content.",
+      "solution": ""
+    },
+    {
+      "room": "",
+      "startup": "Immerso",
+      "members": "Nakshatra, Ashmita & Vanad",
+      "sector": "Consumer Tech",
+      "keywords": [
+        "Language learning",
+        "Engagement",
+        "Mobile app"
+      ],
+      "problem": "Educational products compete for attention against some of the most engaging platforms ever created, making retention the biggest challenge in language learning.",
+      "solution": "Building a language-learning platform(flutter app) that transforms daily scrolling into personalized language immersion."
+    },
+    {
+      "room": "",
+      "startup": "",
+      "members": "Vikram & Kavya",
+      "sector": "Consumer Tech",
+      "keywords": [
+        "D2C fashion",
+        "Conversational commerce",
+        "Ad conversion"
+      ],
+      "problem": "Trendy apparel brands bleed ad budget because up to 90% of consumers who click social media ads abandon standard checkout web pages or drop out of rigid, boring, text-only automated chats.",
+      "solution": "An Interactive AI Engine that transforms ad clicks directly into dynamic, character-driven voice chats, guiding fashion shoppers smoothly from ad intent to instant checkout inside the chat window."
+    },
+    {
+      "room": "",
+      "startup": "BolnaSeekho",
+      "members": "Satyam",
+      "sector": "Consumer Tech",
+      "keywords": [
+        "English learning",
+        "Short-form video"
+      ],
+      "problem": "Teaching english via short personalized videos",
+      "solution": ""
+    },
+    {
+      "room": "",
+      "startup": "",
+      "members": "Vaibhav Negi",
+      "sector": "Advanced Manufacturing",
+      "keywords": [
+        "Design feasibility",
+        "Contract manufacturing",
+        "Quoting"
+      ],
+      "problem": "interpretability and manufacturability of designs in HMLV contract manufactureres",
+      "solution": "inteligence that aids the manual inspection , feasibility check , process map and quotation"
+    },
+    {
+      "room": "",
+      "startup": "Complyt",
+      "members": "Aditi, Ishita & Mahi",
+      "sector": "Regulatory Tech",
+      "keywords": [
+        "DPDP Act",
+        "Compliance",
+        "Automation"
+      ],
+      "problem": "The DPDP Act mandates robust data protection compliance by May 2027, but fragmented workflows, evolving regulations, and absent automated monitoring leave businesses exposed to audit failures, compliance gaps, and steep penalties, demanding a scalable, tech-driven solution.",
+      "solution": ""
+    }
+  ]
+}
