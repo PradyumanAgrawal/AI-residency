@@ -42,7 +42,17 @@ h1{
   display:inline-flex; align-items:center; gap:7px; box-shadow:var(--shadow);
 }
 .fact b{font-weight:600}
-.note{font-size:13.5px; color:var(--muted); margin:14px 0 22px; max-width:660px}
+.note{font-size:13.5px; color:var(--muted); margin:14px 0 16px; max-width:660px}
+
+.jump-label{font-family:'Oswald',sans-serif; font-weight:600; font-size:11.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin:0 0 8px}
+.secnav{display:flex; flex-wrap:wrap; gap:8px; margin:0 0 20px}
+.pill{
+  font-family:'Oswald',sans-serif; font-weight:600; font-size:12.5px; letter-spacing:.03em;
+  text-transform:uppercase; color:#fff; background:var(--green); border:none; cursor:pointer;
+  border-radius:999px; padding:9px 14px; transition:background .15s;
+}
+.pill:hover{background:var(--green-2)}
+.pill:focus-visible{outline:3px solid rgba(44,84,64,.35); outline-offset:2px}
 
 .search{position:relative; margin:0 0 26px}
 .search input{
@@ -53,7 +63,7 @@ h1{
 .search input:focus{outline:none; border-color:var(--green-2); box-shadow:0 0 0 3px rgba(44,84,64,.15)}
 .search svg{position:absolute; left:14px; top:50%; transform:translateY(-50%); color:var(--muted)}
 
-.group{margin:0 0 24px}
+.group{margin:0 0 24px; scroll-margin-top:14px}
 .group-h{
   font-family:'Oswald',sans-serif; font-weight:600; text-transform:uppercase;
   letter-spacing:.05em; font-size:15px; color:var(--green);
@@ -172,6 +182,9 @@ h1{
   </div>
   <p class="note">Tap <b>Read more</b> on any team to read their full problem and solution. Room numbers will be filled in shortly, so check back to find where each team is set up.</p>
 
+  <p class="jump-label">Jump to a sector</p>
+  <nav class="secnav" id="secnav" aria-label="Jump to sector"></nav>
+
   <div class="search">
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
     <input id="q" type="search" placeholder="Search team, person, or sector" autocomplete="off" aria-label="Search teams">
@@ -215,13 +228,27 @@ h1{
   teams.forEach(function(t,i){ t._i = i; });
 
   var list = document.getElementById('list');
+  var secnav = document.getElementById('secnav');
   function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+  function slug(s){ return 'sec-' + s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''); }
 
   order.forEach(function(g){
     var items = teams.filter(function(t){ return t.sector === g; });
     if(!items.length) return;
+    var id = slug(g);
+    var pill = document.createElement('button');
+    pill.className = 'pill';
+    pill.type = 'button';
+    pill.textContent = g;
+    pill.addEventListener('click', function(){
+      var target = document.getElementById(id);
+      if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+    });
+    secnav.appendChild(pill);
+
     var sec = document.createElement('section');
     sec.className = 'group';
+    sec.id = id;
     sec.dataset.group = g;
     var h = '<div class="group-h">'+esc(g)+'<span class="count">'+items.length+'</span></div>';
     h += '<div class="thead"><div>Room</div><div>Team</div><div>Problem area</div><div></div></div>';
