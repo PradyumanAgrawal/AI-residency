@@ -1,121 +1,17 @@
 {
   "groupOrder": [
+    "Enterprise AI",
+    "Consumer Tech",
+    "Regulatory Tech",
+    "Fintech",
+    "Healthtech",
     "Space Tech",
     "Aerospace",
     "Geospatial Tech",
     "Physical AI & Robotics",
-    "Fintech",
-    "Healthtech",
-    "Enterprise AI",
-    "Consumer Tech",
-    "Advanced Manufacturing",
-    "Regulatory Tech"
+    "Advanced Manufacturing"
   ],
   "teams": [
-    {
-      "room": "",
-      "startup": "PHASE IQ",
-      "members": "Chhavie & Tanishk",
-      "sector": "Space Tech",
-      "keywords": [
-        "SAR/InSAR radar",
-        "Satellite compute",
-        "Deformation maps"
-      ],
-      "problem": "As NISAR and next-generation SAR missions dramatically increase the volume of radar imagery, existing InSAR workflows struggle to scale efficiently. Large numbers of interferograms must be generated and processed, leading to high computational costs, long processing times, and poor performance in low-coherence regions such as vegetation-rich and monsoon-affected terrain. Organizations need a way to generate reliable deformation products without proportionally increasing compute resources.",
-      "solution": "We are building a NISAR-native interferogram processing layer that combines coherence prediction, intelligent pair selection, and coherence-guided S/L band fusion. By predicting interferometric quality before processing and leveraging the complementary strengths of NISAR's simultaneous S-band and L-band observations, we aim to reduce unnecessary computation while generating benchmark-quality interferograms in regions where conventional single-band InSAR often fails."
-    },
-    {
-      "room": "",
-      "startup": "BRAHMA Aerospace",
-      "members": "Sandipan & Miheer",
-      "sector": "Aerospace",
-      "keywords": [
-        "Industrial sensor data",
-        "Physics-aware AI",
-        "Failure modes"
-      ],
-      "problem": "Industrial and engineering organizations generate massive amounts of sensor and operational data, but discovering hidden failure mechanisms, inefficiencies, and actionable insights from that data remains slow, expensive, and heavily dependent on human experts.",
-      "solution": "BRAHMA uses physics-aware AI and world-modeling to automatically discover hidden mechanisms, future insights and system behavior, and recommend optimal actions from complex industrial data."
-    },
-    {
-      "room": "",
-      "startup": "HalfRay",
-      "members": "Dhruv & Nishant",
-      "sector": "Geospatial Tech",
-      "keywords": [
-        "Railway safety",
-        "Satellite InSAR",
-        "Ground deformation"
-      ],
-      "problem": "Indian Railways' inspection system (monthly officer rounds, SSE checks, trolley patrols, ultrasonic testing) detects defects in the rail/track. It does not detect ground movement beneath the track. Subsurface deformation can progress undetected between inspection cycles.",
-      "solution": "Satellite InSAR-based ground deformation monitoring layer, producing section-wise risk priority for existing inspection teams - not a replacement."
-    },
-    {
-      "room": "",
-      "startup": "MERU",
-      "members": "Adil & Aniket",
-      "sector": "Geospatial Tech",
-      "keywords": [
-        "Earth observation",
-        "Developer API",
-        "Geospatial infra"
-      ],
-      "problem": "Developers and startups building applications in agriculture, climate, and infrastructure need satellite-derived Earth Observation (EO) data, but accessing it today means navigating a fragmented nightmare: disparate data providers, complex procurement APIs, incompatible file formats (NetCDF, GeoTIFF), and the crushing cloud compute costs of processing raw satellite imagery. Instead of spending their first six months building their actual product, these teams burn runway reinventing geospatial infrastructure from scratch. Existing tools like Google Earth Engine are built for academic research, not production-grade software engineering — leaving a gap for teams who need to ship, not experiment.",
-      "solution": "We're building a developer-first geospatial infrastructure platform — a unified API and processing layer that abstracts away the complexity of EO data. Developers can query, fuse, and process satellite data (Sentinel, Landsat, NISAR) without managing fragmented providers, getting analysis-ready datasets and processing-as-a-service that cut time-to-build for geospatial applications from months to hours. This unified API is the wedge — the \"Stripe for Earth Observation\" — but it's also the data-collection engine for the bigger play: as developers route their usage intelligence and pipelines through us, we accumulate what's needed to train a multi-modal Geospatial Foundation Model, eventually letting users go from querying raw data to asking decision-level questions directly (\"where should we site a solar farm in Gujarat\") — the GPT for geospatial decision-making."
-    },
-    {
-      "room": "",
-      "startup": "Sentrix Robotics",
-      "members": "Jyotishman Das & Saideep Keshri",
-      "sector": "Physical AI & Robotics",
-      "keywords": [
-        "Robotics data",
-        "Multimodal sensing",
-        "Embodied AI"
-      ],
-      "problem": "Physical AI systems require massive volumes of high-quality, synchronized real-world interaction data to learn dexterous manipulation and human-like behavior. However, existing data collection solutions are fragmented, expensive, hardware-specific, and difficult to scale across sensing modalities. This creates a critical data bottleneck that slows the development of robotics, humanoids, teleoperation systems, and embodied AI models.",
-      "solution": "Sentrix is building a modular data collection ecosystem for Physical AI. We provide a catalog of synchronizable sensing hardware and software infrastructure that enables researchers and companies to capture, synchronize, validate, and export multimodal human interaction datasets. Our initial focus is tactile and vision data fusion, with future expansion into additional sensing modalities such as force, motion, bio-signals, and environmental context. Alongside the platform, Sentrix generates bespoke datasets tailored to customer-specific training and research requirements."
-    },
-    {
-      "room": "",
-      "startup": "undark",
-      "members": "Rahul Shendre & Vaibhav Shukla",
-      "sector": "Fintech",
-      "keywords": [
-        "Loan collections",
-        "Debt recovery",
-        "NBFCs"
-      ],
-      "problem": "Small-ticket loan collections (below ₹1 lakh) remain expensive and fragmented, making recoveries inefficient for NBFCs and digital lenders.",
-      "solution": "Building an intelligence layer on top of the current infra that helps lenders prioritize accounts, recommend the next best collection action, and improve recoveries using existing collection workflows instead of replacing them."
-    },
-    {
-      "room": "",
-      "startup": "VigilNet.tech",
-      "members": "Raghav Maheshwari",
-      "sector": "Fintech",
-      "keywords": [
-        "AML / RegTech",
-        "Alert triage",
-        "False positives"
-      ],
-      "problem": "90-95% AML alerts are false positives. Analysts spend 15mins-2+ hrs triaging the flagged transactions with zero intelligence.",
-      "solution": ""
-    },
-    {
-      "room": "",
-      "startup": "GeneGenie",
-      "members": "Dhruv Mali & Jayadharini R",
-      "sector": "Healthtech",
-      "keywords": [
-        "Genomics",
-        "Risk prediction",
-        "India-specific"
-      ],
-      "problem": "Missing population specific genomic interpretation variant databases and risk prediction models",
-      "solution": "A risk prediction and interpretation platform designed specifically for Indian populations."
-    },
     {
       "room": "",
       "startup": "VoClyp",
@@ -234,19 +130,6 @@
     },
     {
       "room": "",
-      "startup": "",
-      "members": "Vaibhav Negi",
-      "sector": "Advanced Manufacturing",
-      "keywords": [
-        "Design feasibility",
-        "Contract manufacturing",
-        "Quoting"
-      ],
-      "problem": "interpretability and manufacturability of designs in HMLV contract manufactureres",
-      "solution": "inteligence that aids the manual inspection , feasibility check , process map and quotation"
-    },
-    {
-      "room": "",
       "startup": "Complyt",
       "members": "Aditi, Ishita & Mahi",
       "sector": "Regulatory Tech",
@@ -257,6 +140,123 @@
       ],
       "problem": "The DPDP Act mandates robust data protection compliance by May 2027, but fragmented workflows, evolving regulations, and absent automated monitoring leave businesses exposed to audit failures, compliance gaps, and steep penalties, demanding a scalable, tech-driven solution.",
       "solution": ""
+    },
+    {
+      "room": "",
+      "startup": "undark",
+      "members": "Rahul Shendre & Vaibhav Shukla",
+      "sector": "Fintech",
+      "keywords": [
+        "Loan collections",
+        "Debt recovery",
+        "NBFCs"
+      ],
+      "problem": "Small-ticket loan collections (below ₹1 lakh) remain expensive and fragmented, making recoveries inefficient for NBFCs and digital lenders.",
+      "solution": "Building an intelligence layer on top of the current infra that helps lenders prioritize accounts, recommend the next best collection action, and improve recoveries using existing collection workflows instead of replacing them."
+    },
+    {
+      "room": "",
+      "startup": "VigilNet.tech",
+      "members": "Raghav Maheshwari",
+      "sector": "Fintech",
+      "keywords": [
+        "AML / RegTech",
+        "Alert triage",
+        "False positives"
+      ],
+      "problem": "90-95% AML alerts are false positives. Analysts spend 15mins-2+ hrs triaging the flagged transactions with zero intelligence.",
+      "solution": ""
+    },
+    {
+      "room": "",
+      "startup": "GeneGenie",
+      "members": "Dhruv Mali & Jayadharini R",
+      "sector": "Healthtech",
+      "keywords": [
+        "Genomics",
+        "Risk prediction",
+        "India-specific"
+      ],
+      "problem": "Missing population specific genomic interpretation variant databases and risk prediction models",
+      "solution": "A risk prediction and interpretation platform designed specifically for Indian populations."
+    },
+    {
+      "room": "",
+      "startup": "PHASE IQ",
+      "members": "Chhavie & Tanishk",
+      "sector": "Space Tech",
+      "keywords": [
+        "SAR/InSAR radar",
+        "Satellite compute",
+        "Deformation maps"
+      ],
+      "problem": "As NISAR and next-generation SAR missions dramatically increase the volume of radar imagery, existing InSAR workflows struggle to scale efficiently. Large numbers of interferograms must be generated and processed, leading to high computational costs, long processing times, and poor performance in low-coherence regions such as vegetation-rich and monsoon-affected terrain. Organizations need a way to generate reliable deformation products without proportionally increasing compute resources.",
+      "solution": "We are building a NISAR-native interferogram processing layer that combines coherence prediction, intelligent pair selection, and coherence-guided S/L band fusion. By predicting interferometric quality before processing and leveraging the complementary strengths of NISAR's simultaneous S-band and L-band observations, we aim to reduce unnecessary computation while generating benchmark-quality interferograms in regions where conventional single-band InSAR often fails."
+    },
+    {
+      "room": "",
+      "startup": "BRAHMA Aerospace",
+      "members": "Sandipan & Miheer",
+      "sector": "Aerospace",
+      "keywords": [
+        "Industrial sensor data",
+        "Physics-aware AI",
+        "Failure modes"
+      ],
+      "problem": "Industrial and engineering organizations generate massive amounts of sensor and operational data, but discovering hidden failure mechanisms, inefficiencies, and actionable insights from that data remains slow, expensive, and heavily dependent on human experts.",
+      "solution": "BRAHMA uses physics-aware AI and world-modeling to automatically discover hidden mechanisms, future insights and system behavior, and recommend optimal actions from complex industrial data."
+    },
+    {
+      "room": "",
+      "startup": "HalfRay",
+      "members": "Dhruv & Nishant",
+      "sector": "Geospatial Tech",
+      "keywords": [
+        "Railway safety",
+        "Satellite InSAR",
+        "Ground deformation"
+      ],
+      "problem": "Indian Railways' inspection system (monthly officer rounds, SSE checks, trolley patrols, ultrasonic testing) detects defects in the rail/track. It does not detect ground movement beneath the track. Subsurface deformation can progress undetected between inspection cycles.",
+      "solution": "Satellite InSAR-based ground deformation monitoring layer, producing section-wise risk priority for existing inspection teams - not a replacement."
+    },
+    {
+      "room": "",
+      "startup": "MERU",
+      "members": "Adil & Aniket",
+      "sector": "Geospatial Tech",
+      "keywords": [
+        "Earth observation",
+        "Developer API",
+        "Geospatial infra"
+      ],
+      "problem": "Developers and startups building applications in agriculture, climate, and infrastructure need satellite-derived Earth Observation (EO) data, but accessing it today means navigating a fragmented nightmare: disparate data providers, complex procurement APIs, incompatible file formats (NetCDF, GeoTIFF), and the crushing cloud compute costs of processing raw satellite imagery. Instead of spending their first six months building their actual product, these teams burn runway reinventing geospatial infrastructure from scratch. Existing tools like Google Earth Engine are built for academic research, not production-grade software engineering — leaving a gap for teams who need to ship, not experiment.",
+      "solution": "We're building a developer-first geospatial infrastructure platform — a unified API and processing layer that abstracts away the complexity of EO data. Developers can query, fuse, and process satellite data (Sentinel, Landsat, NISAR) without managing fragmented providers, getting analysis-ready datasets and processing-as-a-service that cut time-to-build for geospatial applications from months to hours. This unified API is the wedge — the \"Stripe for Earth Observation\" — but it's also the data-collection engine for the bigger play: as developers route their usage intelligence and pipelines through us, we accumulate what's needed to train a multi-modal Geospatial Foundation Model, eventually letting users go from querying raw data to asking decision-level questions directly (\"where should we site a solar farm in Gujarat\") — the GPT for geospatial decision-making."
+    },
+    {
+      "room": "",
+      "startup": "Sentrix Robotics",
+      "members": "Jyotishman Das & Saideep Keshri",
+      "sector": "Physical AI & Robotics",
+      "keywords": [
+        "Robotics data",
+        "Multimodal sensing",
+        "Embodied AI"
+      ],
+      "problem": "Physical AI systems require massive volumes of high-quality, synchronized real-world interaction data to learn dexterous manipulation and human-like behavior. However, existing data collection solutions are fragmented, expensive, hardware-specific, and difficult to scale across sensing modalities. This creates a critical data bottleneck that slows the development of robotics, humanoids, teleoperation systems, and embodied AI models.",
+      "solution": "Sentrix is building a modular data collection ecosystem for Physical AI. We provide a catalog of synchronizable sensing hardware and software infrastructure that enables researchers and companies to capture, synchronize, validate, and export multimodal human interaction datasets. Our initial focus is tactile and vision data fusion, with future expansion into additional sensing modalities such as force, motion, bio-signals, and environmental context. Alongside the platform, Sentrix generates bespoke datasets tailored to customer-specific training and research requirements."
+    },
+    {
+      "room": "",
+      "startup": "",
+      "members": "Vaibhav Negi",
+      "sector": "Advanced Manufacturing",
+      "keywords": [
+        "Design feasibility",
+        "Contract manufacturing",
+        "Quoting"
+      ],
+      "problem": "interpretability and manufacturability of designs in HMLV contract manufactureres",
+      "solution": "inteligence that aids the manual inspection , feasibility check , process map and quotation"
     }
   ]
 }

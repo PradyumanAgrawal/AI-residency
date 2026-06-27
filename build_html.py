@@ -28,7 +28,7 @@ body{
   font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
   font-size:16px; line-height:1.55; -webkit-font-smoothing:antialiased;
 }
-.wrap{max-width:920px; margin:0 auto; padding:20px 16px 64px}
+.wrap{max-width:940px; margin:0 auto; padding:22px 16px 56px}
 .head-kicker{
   font-family:'Oswald',sans-serif; font-weight:600; letter-spacing:.14em;
   text-transform:uppercase; font-size:12.5px; color:var(--green-2);
@@ -60,11 +60,11 @@ h1{
 .search input:focus{outline:none; border-color:var(--green-2); box-shadow:0 0 0 3px rgba(44,84,64,.15)}
 .search svg{position:absolute; left:14px; top:50%; transform:translateY(-50%); color:var(--muted)}
 
-.group{margin:0 0 30px}
+.group{margin:0 0 24px}
 .group-h{
   font-family:'Oswald',sans-serif; font-weight:600; text-transform:uppercase;
   letter-spacing:.05em; font-size:15px; color:var(--green);
-  display:flex; align-items:center; gap:10px; margin:0 0 12px; padding-bottom:8px;
+  display:flex; align-items:center; gap:10px; margin:0 0 10px; padding-bottom:7px;
   border-bottom:2px solid var(--green);
 }
 .group-h .count{
@@ -77,11 +77,11 @@ h1{
   gap:14px; padding:0 16px 8px; font-family:'Oswald',sans-serif; font-weight:600;
   font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted);
 }
-.rows{display:flex; flex-direction:column; gap:10px}
+.rows{display:flex; flex-direction:column; gap:8px}
 .row{
   display:grid; grid-template-columns:62px minmax(0,1.45fr) minmax(0,1.55fr) 116px;
-  gap:14px; align-items:center; background:var(--surface); border:1px solid var(--border);
-  border-radius:14px; padding:14px 16px; box-shadow:var(--shadow);
+  gap:16px; align-items:center; background:var(--surface); border:1px solid var(--border);
+  border-radius:12px; padding:12px 16px; box-shadow:var(--shadow);
 }
 .room{
   font-family:'Oswald',sans-serif; font-weight:700; font-size:15px; color:var(--green);
@@ -153,7 +153,7 @@ h1{
 }
 @media (max-width:640px){
   .thead{display:none}
-  .row{grid-template-columns:1fr; gap:10px; padding:16px}
+  .row{grid-template-columns:1fr; gap:11px; padding:15px 16px}
   .room{justify-self:start; padding:6px 14px; min-width:64px}
   .room.tba{padding:6px 12px}
   .cell-label{display:block; font-family:'Oswald',sans-serif; font-weight:600; font-size:10.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--muted); margin-bottom:5px}

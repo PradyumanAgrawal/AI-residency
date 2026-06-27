@@ -31,11 +31,12 @@ meta = {
     20: ("Regulatory Tech",       ["DPDP Act", "Compliance", "Automation"]),
 }
 
-# Display order of sector groups
+# Display order of sector groups.
+# Business-relevant sectors first (for the MBA audience), deep-tech / space last.
 group_order = [
+    "Enterprise AI", "Consumer Tech", "Regulatory Tech", "Fintech", "Healthtech",
     "Space Tech", "Aerospace", "Geospatial Tech", "Physical AI & Robotics",
-    "Fintech", "Healthtech", "Enterprise AI", "Consumer Tech",
-    "Advanced Manufacturing", "Regulatory Tech",
+    "Advanced Manufacturing",
 ]
 
 rows = []
